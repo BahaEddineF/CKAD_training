@@ -6,7 +6,9 @@ In this section, we’ll break down the fundamental concepts of Kubernetes. You�
 
 ## 🚢 1. Containerization
 
-![Containerization Layers](/images/containerization.png)
+<p align="center">
+  <img src="/Images/Conteneurization.png.png" alt="Containerization Layers" width="500"/>
+</p>
 
 ### 🔍 What is Containerization?
 
@@ -16,7 +18,9 @@ Containerization is a lightweight form of virtualization that packages applicati
 
 ## ☸️ 2. What is Kubernetes?
 
-![Kubernetes Logo](/Images/kuberneteslogo.png)
+<p align="center">
+  <img src="/Images/kuberneteslogo.png" alt="Kubernetes Logo" width="300"/>
+</p>
 
 **Kubernetes** is an open-source container orchestration platform that helps you:
 - Deploy and manage containerized applications
@@ -30,7 +34,9 @@ Containerization is a lightweight form of virtualization that packages applicati
 
 ## 🏗️ 3. Kubernetes Architecture
 
-![Kubernetes Architecture Diagram](/Images/Architecture.png)
+<p align="center">
+  <img src="/Images/Architecture.png" alt="Kubernetes Architecture Diagram" width="500"/>
+</p>
 
 Kubernetes architecture is divided into two main parts:
 - **Master (Control Plane) Node**
