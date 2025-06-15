@@ -7,7 +7,7 @@ In this section, we’ll break down the fundamental concepts of Kubernetes. You�
 ## 🚢 1. Containerization
 
 <p align="center">
-  <img src="/Images/Conteneurization.png.png" alt="Containerization Layers" width="500"/>
+  <img src="/Images/Conteneurization.png" alt="Containerization Layers" width="500"/>
 </p>
 
 ### 🔍 What is Containerization?
