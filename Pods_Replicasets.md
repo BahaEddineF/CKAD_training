@@ -23,7 +23,7 @@ A **Pod** is the smallest unit in Kubernetes, consisting of one or more containe
 ### ▶️ Imperative Command
 
 ```bash
-kubectl run mypod --port=8089 --image=pasc/ano007/sample:1.0 --generator=run-pod/v1
+kubectl run Namepod.... --port=8089 --image=pasc/ano007/sample:1.0 
 ```
 
 ---
