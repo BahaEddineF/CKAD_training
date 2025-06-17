@@ -5,7 +5,7 @@
 
 ## 1. What is a Deployment?
 <div align="center">
-  <img src="/Images/deplou.png" alt="Deployment Diagram" width="300">
+  <img src="/Images/deplou.png" alt="Deployment Diagram" width="500">
   </div>
 
 
@@ -44,7 +44,7 @@ spec:
 
 ## 2. What is a Namespace?
 <div align="center">
-  <img src="/Images/namespace.png" alt="Namespace Structure" width="300">
+  <img src="/Images/namespace.png" alt="Namespace Structure" width="500">
 </div>
 Namespaces in Kubernetes are used to divide a cluster into virtual environments, helping organize resources for teams or projects. Common namespaces include kube-system, default, and kube-public.
 Namespaces provide isolation, resource limits, policies, and their own DNS scope
