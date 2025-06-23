@@ -142,3 +142,101 @@ volumes:
 ---
 
 
+
+
+
+## 3. What is a Security Context?
+<div align="center">
+  <img src="/Images/Contextsecurity.png" alt="Security Context Diagram" width="600">
+</div>
+A **SecurityContext** defines privilege and access control settings for Pods or containers, including:
+
+- User and group IDs  
+- Filesystem permissions  
+- Privilege escalation  
+- Capabilities  
+- SELinux/AppArmor options  
+
+---
+
+## Example Configuration
+
+### Pod-Level Security Context
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secure-pod
+spec:
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 3000
+    fsGroup: 2000
+  containers:
+  - name: secure-container
+    image: nginx
+```
+
+### Container-Level Security Context
+```yaml
+containers:
+- name: secure-container
+  image: redis
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 3000
+    allowPrivilegeEscalation: false
+    capabilities:
+      add: ["NET_ADMIN"]
+      drop: ["ALL"]
+    readOnlyRootFilesystem: true
+```
+
+---
+
+## Key Security Context Fields
+
+| Field                   | Description                                               |
+|------------------------|-----------------------------------------------------------|
+| `runAsUser`            | User ID to run the container process                      |
+| `runAsGroup`           | Group ID to run the container process                     |                         |
+| `allowPrivilegeEscalation` | Prevent privilege escalation attacks (recommended: false) |
+---
+
+## Best Practices
+
+### Least Privilege Principle
+```yaml
+securityContext:
+  runAsNonRoot: true
+  allowPrivilegeEscalation: false
+```
+
+### Filesystem Protection
+```yaml
+securityContext:
+  readOnlyRootFilesystem: true
+```
+
+### Capability Management
+```yaml
+capabilities:
+  drop: ["ALL"]
+  add: ["NET_BIND_SERVICE"]
+```
+
+### Pod Security Standards
+- Use `restricted` policy where possible  
+- Apply **Pod Security Admission (PSA)**  
+
+---
+
+## Common Commands
+
+```bash
+# Check effective user in running container
+kubectl exec secure-pod -- whoami
+
+# Verify security context
+kubectl get pod secure-pod -o jsonpath='{.spec.securityContext}'
+```
