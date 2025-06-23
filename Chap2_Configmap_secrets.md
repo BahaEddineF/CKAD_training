@@ -122,7 +122,7 @@ volumes:
   secret:
     secretName: db-secret
 ```
-## 3. Key Commands Cheat Sheet
+## Key Commands Cheat Sheet
 
 | Task                        | Command                                                                 |
 |-----------------------------|-------------------------------------------------------------------------|
@@ -147,7 +147,7 @@ volumes:
 
 ## 3. What is a Security Context?
 <div align="center">
-  <img src="/Images/Contextsecurity.png" alt="Security Context Diagram" width="600">
+  <img src="/Images/Contextsecurity.png" alt="Security Context Diagram" width="350">
 </div>
 A **SecurityContext** defines privilege and access control settings for Pods or containers, including:
 
