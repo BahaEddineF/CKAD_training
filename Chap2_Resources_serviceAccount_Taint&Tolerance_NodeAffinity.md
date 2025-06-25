@@ -41,7 +41,7 @@ kubectl get serviceaccounts
 ## 2. Resource Requirements & Limits
 
 <div align="center">
-  <img src="/images/resources.png" alt="Resource Allocation" width="500">
+  <img src="/Images/resources.png" alt="Resource Allocation" width="500">
 </div>
 
 **Definition:** Define the minimum and maximum amount of CPU and memory a container needs to run.
@@ -74,7 +74,7 @@ spec:
 ## 3. Taints & Tolerations
 
 <div align="center">
-  <img src="/images/exemple taint.png" alt="Taints Mechanism" width="600">
+  <img src="/Images/exemple taint.png" alt="Taints Mechanism" width="600">
 </div>
 
 ### Taints (Node Side)
