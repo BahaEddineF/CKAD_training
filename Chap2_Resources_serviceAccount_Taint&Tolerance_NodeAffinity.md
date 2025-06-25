@@ -114,14 +114,14 @@ tolerations:
 ---
 
 <div align="center">
-  <img src="/images/nodetaint.png" alt="Node Selection" width="500">
+  <img src="/Images/nodetaint.png" alt="Node Selection" width="500">
 </div>
 
 ---
 
 ## 4. Node Selector
 <div align="center">
-  <img src="/images/nodeselctor.png" alt="Node Selection" width="500">
+  <img src="/Images/nodeselctor.png" alt="Node Selection" width="500">
 </div>
 
 
