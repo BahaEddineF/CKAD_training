@@ -64,7 +64,7 @@ spec:
 # 🧪 Readiness and Liveness Probe
 
 <div align="center">
-  <img src="/Images/readnessprobe.png" alt="Probe Overview" width="600">
+  <img src="/Images/readnessprobe.png" alt="Probe Overview" width="500">
 </div>
 
 ---
