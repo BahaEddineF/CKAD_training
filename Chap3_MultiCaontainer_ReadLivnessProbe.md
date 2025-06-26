@@ -1,7 +1,7 @@
 # Kubernetes Multi-Container Pods & Readiness/Liveness Probes
 
 <div align="center">
-  <img src="/Images/multic.png" alt="Multi-Container Pod Diagram" width="450">
+  <img src="/Images/multic.png" alt="Multi-Container Pod Diagram" width="300">
 </div>
 
 ---
@@ -16,7 +16,6 @@ A Pod configuration where multiple containers work together, sharing the same:
 ### 🔑 Key Characteristics:
 - Containers are co-located (always scheduled together)
 - Communicate via `localhost`
-- Share ephemeral or mounted volumes
 
 ---
 
@@ -64,7 +63,7 @@ spec:
 # 🧪 Readiness and Liveness Probe
 
 <div align="center">
-  <img src="/Images/readnessprobe.png" alt="Probe Overview" width="500">
+  <img src="/Images/readnessprobe.png" alt="Probe Overview" width="600">
 </div>
 
 ---
